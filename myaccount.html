@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="x, y, ,etc" />
+    <meta name="description" content="x, y, ,etc" />
+    <meta name="author" content="x, y, ,etc" />
+    <title>The North Face</title>
+    <link rel="icon" href="Assets/images/icon.jpg" class="icon" />
+    <link rel="stylesheet" href="Assets/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="Assets/css/myaccount.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo-img img-fluid" src="Assets/images/logo.png" alt="The North Face Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="men.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Men
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="men.html#jackets">Jackets</a></li>
+              <li><a class="dropdown-item" href="men.html#t-shirts">T-Shirts</a></li>
+              <li><a class="dropdown-item" href="men.html#bottoms">bottoms</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Women
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="women.html#jackets">Jackets</a></li>
+              <li><a class="dropdown-item" href="women.html#t-shirts">T-Shirts</a></li>
+              <li><a class="dropdown-item" href="women.html#bottoms">bottoms</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kids
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="kids.html#jackets">Jackets</a></li>
+              <li><a class="dropdown-item" href="kids.html#t-shirts">T-Shirts</a></li>
+              <li><a class="dropdown-item" href="kids.html#bottoms">bottoms</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shoes.html">Shoes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bags.html">Bags</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="careers.html">Careers</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <li class="nav-item">
+          <button class="btn btn-outline-primary">My Account</button>
+        </li>
+        <li class="shoppingicon nav-item"><i class="bx bx bx-shopping-bag " id="cart-bag"></i><span
+            id="total-items-display" class="cart-number">0</span></li>
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <div class="cart-content">
+
+          </div>
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">0$</div>
+          </div>
+          <button type="button" class="but btn-buy btn-primary">Buy Now</button>
+          <i class="bx bx-x" id="close-cart"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <!-- end of header -->
+
+    <!-- Main -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="wrapper">
+
+                <span class="icon-close">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+        
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="login-register">
+                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+        
+                <div class="form-box register">
+                    <h2>Registration</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></span>
+                            <input type="text" required>
+                            <label>Username</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">I agree to the terms & conditions</label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                        <div class="login-register">
+                            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <!-- <footer>
+         <div class="footer-icons">
+     
+             <i class='bx bxl-facebook-circle' id="ficon"></i>
+             <i class='bx bxl-instagram-alt' id="ficon"></i>
+             <i class='bx bxl-snapchat' id="ficon"></i>
+             <i class='bx bxl-twitter' id="ficon"></i>
+             <i class='bx bxl-tiktok' id="ficon"></i>
+         </div>
+         <div class="footer-menu">
+             <ul class="footer-links">
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">Products</a></li>
+                 <li><a href="#">Careers</a></li>
+                 <li><a href="#">Media & News</a></li>
+                 <li><a href="#">About us</a></li>
+                 <li><a href="#">Our story</a></li>
+                 <li><a href="#">Mission</a></li>
+                 <li><a href="#">Vision</a></li>
+             </ul>
+         </div>
+    </footer> -->
+
+    <!-- JavaScript -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Assets/bootstrap/js/popper.min.js"></script>
+    <script src="Assets/bootstrap/js/jquery-3.7.1.min.js"></script>
+    <script src="Assets/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
