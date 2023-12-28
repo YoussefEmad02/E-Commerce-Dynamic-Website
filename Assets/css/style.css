@@ -6,6 +6,7 @@ body {
     background: #f1fbff;
 }
 
+
 .navbar {
     background: linear-gradient(rgb(131, 197, 241), rgba(255, 255, 255, 0));
 }
@@ -22,13 +23,21 @@ body {
 }
 
 .dropdown-menu{
-    background: linear-gradient(rgb(131, 197, 241), rgba(255, 255, 255, 0));
+    background: linear-gradient(rgb(131, 197, 241), black);
 }
 
+.dropdown-item{
+    color:white;
+}
+
+.dropdown-item:hover{
+    background-color: black;
+    color: #f1fbff;
+}
 /*cart*/
 .cart {
     position: fixed;
-    top: 1.55rem;
+    top: 0;
     right: -100%;
     width: 360px;
     min-height: 100vh;
@@ -131,6 +140,7 @@ body {
 
 /* Cart End */
 
+/* Background Video Style */
 .video-container {
     z-index: -100;
     width: 100%;
@@ -144,10 +154,12 @@ body {
 #video-bg {
     width: 100%;
 }
+/* Background Video End */
 
 .section-padding {
     padding: 100px 0;
 }
+
 
 
 /* Carousel Style */
@@ -288,15 +300,14 @@ footer {
     bottom: 0;
     right: 0;
     padding: 10px;
-    ;
-    background-color: rgb(86, 28, 141);
+    background-color: rgb(131, 197, 241);
     font-size: 1.6em;
     color: white;
     cursor: pointer;
 }
 
 .add-cart:hover {
-    background-color: blueviolet;
+    background-color: black;
 }
 
 /* Product Cart End */
@@ -307,4 +318,9 @@ footer {
     font-weight: 600;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+/* Products Pages Main Photo */
+.main-photo{
+    z-index: -10;
 }

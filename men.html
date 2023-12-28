@@ -16,7 +16,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-xxl navbar-light bg-light fs-5">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img class="logo-img img-fluid" src="Assets/images/logo.png" alt="The North Face Logo" />
@@ -28,10 +28,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active fw-bold" href="men.html" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="men.html" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Men
             </a>
@@ -73,13 +73,16 @@
           <li class="nav-item">
             <a class="nav-link" href="careers.html">Careers</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
         </ul>
-        <form class="d-flex" role="search">
+        <!-- <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        </form> -->
         <li class="nav-item">
-          <button class="btn btn-outline-primary">My Account</button>
+          <button class="btn btn-outline-primary m-2"><a class="nav-link" href="myaccount.html">My Account</a></button>
         </li>
         <li class="shoppingicon nav-item"><i class="bx bx bx-shopping-bag " id="cart-bag"></i><span
             id="total-items-display" class="cart-number">0</span></li>
@@ -95,6 +98,7 @@
           <button type="button" class="but btn-buy btn-primary">Buy Now</button>
           <i class="bx bx-x" id="close-cart"></i>
         </div>
+
       </div>
     </div>
   </nav>
@@ -102,12 +106,12 @@
 
   <!-- men main section -->
   <section>
-    <div class = "container-fluid">
-      <h2> Using image overlay correctly with Bootstrap </h2>
-      <p> The text over the below image is coming by using the "card-img-overlay" class. </p>
-      <div class = "card w-40 d-block mx-auto">
-         <img style = "height: 100vh;" class = "card-img-top" src = "Assets/images/About Us/Background.webp" alt = "Men Background">
-         <a href="#jackets" class="btn btn-primary btn-lg position-absolute top-50 start-50 translate-middle">Shop Men</a>
+    <div class="container-fluid">
+      <div class="card main-photo w-40 d-block mx-auto">
+        <img style="height: 100vh;" class="card-img-top" src="Assets/images/About Us/Background.webp"
+          alt="Men Background">
+        <a href="#jackets" class="btn btn-primary btn-lg position-absolute top-50 start-50 translate-middle">Shop
+          Men</a>
       </div>
     </div>
   </section>
@@ -120,8 +124,8 @@
       <section class="container p-0 ">
         <div class="row gap-5 justify-content-center">
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image"> </a>
+            <h2 class="product-title"> 1996 RETRO NUPTSE JACKET </h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
