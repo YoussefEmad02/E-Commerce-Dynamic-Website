@@ -11,9 +11,9 @@
   <link rel="icon" href="Assets/images/icon.jpg" class="icon" />
   <link rel="stylesheet" href="Assets/bootstrap/css/bootstrap.css" />
   <link rel="stylesheet" href="Assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style></style>
 </head>
 
 <body>
@@ -38,9 +38,15 @@
               Men
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="men.html#jackets">Jackets</a></li>
-              <li><a class="dropdown-item" href="men.html#t-shirts">T-Shirts</a></li>
-              <li><a class="dropdown-item" href="men.html#bottoms">bottoms</a></li>
+              <li>
+                <a class="dropdown-item" href="men.html#jackets">Jackets</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="men.html#t-shirts">T-Shirts</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="men.html#bottoms">bottoms</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -48,9 +54,15 @@
               Women
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="women.html#jackets">Jackets</a></li>
-              <li><a class="dropdown-item" href="women.html#t-shirts">T-Shirts</a></li>
-              <li><a class="dropdown-item" href="women.html#bottoms">bottoms</a></li>
+              <li>
+                <a class="dropdown-item" href="women.html#jackets">Jackets</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="women.html#t-shirts">T-Shirts</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="women.html#bottoms">bottoms</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -58,9 +70,15 @@
               Kids
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="kids.html#jackets">Jackets</a></li>
-              <li><a class="dropdown-item" href="kids.html#t-shirts">T-Shirts</a></li>
-              <li><a class="dropdown-item" href="kids.html#bottoms">bottoms</a></li>
+              <li>
+                <a class="dropdown-item" href="kids.html#jackets">Jackets</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="kids.html#t-shirts">T-Shirts</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="kids.html#bottoms">bottoms</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item">
@@ -79,72 +97,109 @@
             <a class="nav-link" href="contactus.html">Contact Us</a>
           </li>
         </ul>
-        <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
         <li class="nav-item">
-          <button class="btn btn-outline-primary m-2"><a class="nav-link" href="myaccount.html">My Account</a></button>
+          <button class="btn btn-outline-primary m-2">
+            <a class="nav-link" href="myaccount.html">My Account</a>
+          </button>
         </li>
-        <li class="shoppingicon nav-item"><i class="bx bx bx-shopping-bag " id="cart-bag"></i><span
-            id="total-items-display" class="cart-number">0</span></li>
+        <li class="shoppingicon nav-item">
+          <i class="bx bx bx-shopping-bag fs-3" id="cart-bag"></i>
+          <span id="total-items-display" class="cart-number fs-3">0</span>
+        </li>
         <div class="cart">
           <h2 class="cart-title">Your Cart</h2>
-          <div class="cart-content">
-
-          </div>
+          <div class="cart-content"></div>
           <div class="total">
             <div class="total-title">Total</div>
             <div class="total-price">0$</div>
           </div>
-          <button type="button" class="but btn-buy btn-primary">Buy Now</button>
+          <button type="button" class="btn btn-buy btn-primary">
+            <a href="checkout.html" class="btn">Buy Now</a>
+          </button>
           <i class="bx bx-x" id="close-cart"></i>
         </div>
-
       </div>
     </div>
   </nav>
 
   <div class="video-container">
     <video autoplay loop muted id="video-bg">
-
-      <source src="Assets/images/Background Video.mp4" type="video/mp4">
-
+      <source src="Assets/images/Background Video.mp4" type="video/mp4" />
     </video>
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="height: 100%">
+      <div>
+        <h1 class="mainheader row justify-content-center">The North Face</h1>
+      </div>
+      <br />
+      <div class="row">
+        <h2 class="explorebtn" id="explorebtn">Explore</h2>
+      </div>
+    </div>
   </div>
-  <!-- Parallax -->
-  <!-- <section class="parallax">
-    <img src="Assets/images/hill1.png" alt="hill1">
-    <img src="Assets/images/hill2.png" alt="hill2">
-    <img src="Assets/images/hill3.png" alt="hill3">
-    <img src="Assets/images/hill4.png" alt="hill4">
-    <img src="Assets/images/hill5.png" alt="hill5">
-    <img src="Assets/images/tree.png" alt="tree">
-    <h2 id="text">The North Face</h2>
-    <img src="Assets/images/leaf.png" alt="leaf">
-    <img src="Assets/images/plant.png" alt="plant">
 
-  </section> -->
+  <!-- Best Selling Section -->
+  <section class="pt-5 pb-5" id="bestsellingsection">
+    <div class="container">
+      <h2 class="row justify-content-center fw-bold">Best Selling</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 productbox p-0">
+          <a href="product.html">
+            <img src="Assets/images/Men/Men Products/T-Shirts/2.webp" alt="" class="product-image" />
+          </a>
+          <h2 class="product-title">T-Shirt 1</h2>
+          <span class="price">250$</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 productbox p-0">
+          <a href="product.html">
+            <img src="Assets/images/Women/Women Products/Bottoms/3.webp" alt="" class="product-image" />
+          </a>
+          <h2 class="product-title">Bottom 3</h2>
+          <span class="price">250$</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 productbox p-0">
+          <a href="product.html">
+            <img src="Assets/images/Shoes/Kids/4.webp" alt="" class="product-image" /></a>
+          <h2 class="product-title">Shoes 4</h2>
+          <span class="price">250$</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 productbox p-0">
+          <a href="product.html">
+            <img src="Assets/images/Bags/3.webp" alt="" class="product-image" /></a>
+          <h2 class="product-title">Bag 3</h2>
+          <span class="price">250$</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- about section -->
-  <section id="about" class="about section-padding">
+  <!-- Content section -->
+  <section id="content" class="content pt-5 pb-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-12 col-12">
-          <div class="about-img">
-            <img src="Assets/images/About Us/Background.webp" alt="" class="img-fluid">
+          <div class="content-img">
+            <img src="Assets/images/About Us/Background.webp" alt="" class="img-fluid" />
           </div>
         </div>
-        <div class="col-lg-6 col-md-12 col-12 ps-lg-5 mt-md-5">
-          <div class="about-content">
-            <div class="about-text">
-              <h2>We Provide Best Quality <br> Services Ever</h2>
+        <div class="col-lg-6 col-md-12 col-12 mt-md-5">
+          <div class="content-inner">
+            <div class="content-text">
+              <h2>Mision</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae, doloribus aspernatur vitae
-                placeat minus incidunt molestias obcaecati commodi enim iure, magnam quis, velit tempore sequi ipsa!
-                Modi, adipisci inventore.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                molestiae, doloribus aspernatur vitae placeat minus incidunt
+                molestias obcaecati commodi enim iure, magnam quis, velit
+                tempore sequi ipsa! Modi, adipisci inventore. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Eaque molestiae,
+                doloribus aspernatur vitae placeat minus incidunt molestias
+                obcaecati commodi enim iure, magnam quis, velit tempore sequi
+                ipsa! Modi, adipisci inventore.
               </p>
-              <a href="#" class="btn btn-warning"> Learn More</a>
+              <a href="#" class="btn btn-primary"> Learn More</a>
             </div>
           </div>
         </div>
@@ -154,49 +209,51 @@
 
   <!-- Carousel -->
   <div class="container-fluid">
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <div id="carouselCaptions" class="carousel slide">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
           aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="Assets/images/About Us/Background.webp" class="d-block w-100" alt="...">
+            <img src="Assets/images/About Us/Background.webp" class="d-block w-100" alt="..." />
             <div class="carousel-caption">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-              <p><a href="" class="btn btn-warning mt3">Learn More</a></p>
+              <h5>Our Men Section</h5>
+              <p>Men Featured.</p>
+              <p>
+                <a href="men.html" class="btn btn-primary mt3">Shop Men</a>
+              </p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="Assets/images/Men/Men Background.jpg" class="d-block w-100" alt="...">
+            <img src="Assets/images/Men/Men Background.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-              <p><a href="" class="btn btn-danger mt3">Learn More</a></p>
+              <h5>Our Women Section</h5>
+              <p>Women's Featured.</p>
+              <p>
+                <a href="women.html" class="btn btn-primary mt3">Shop Women</a>
+              </p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="Assets/images/Women/Women Background.jpeg" class="d-block w-100" alt="...">
+            <img src="Assets/images/Women/Women Background.jpeg" class="d-block w-100" alt="..." />
             <div class="carousel-caption">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-              <p><a href="" class="btn btn-danger mt3">Learn More</a></p>
+              <h5>Our Kids Section</h5>
+              <p>Kids's Featured</p>
+              <p>
+                <a href="kids.html" class="btn btn-primary mt3">Shop Kids</a>
+              </p>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -204,25 +261,60 @@
     </div>
   </div>
 
-  <!-- about section -->
-  <section id="about" class="about section-padding">
+  <!-- Content section -->
+  <section id="content" class="content pt-5 pb-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-12 col-12">
-          <div class="about-img">
-            <img src="Assets/images/About Us/Background.webp" alt="" class="img-fluid">
+          <div class="content-img">
+            <img src="Assets/images/About Us/Background.webp" alt="" class="img-fluid" />
           </div>
         </div>
-        <div class="col-lg-6 col-md-12 col-12 ps-lg-5 mt-md-5">
-          <div class="about-content">
-            <div class="about-text">
-              <h2>We Provide Best Quality <br> Services Ever</h2>
+        <div class="col-lg-6 col-md-12 col-12 mt-md-5">
+          <div class="content-inner">
+            <div class="content-text">
+              <h2>Mision</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae, doloribus aspernatur vitae
-                placeat minus incidunt molestias obcaecati commodi enim iure, magnam quis, velit tempore sequi ipsa!
-                Modi, adipisci inventore.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                molestiae, doloribus aspernatur vitae placeat minus incidunt
+                molestias obcaecati commodi enim iure, magnam quis, velit
+                tempore sequi ipsa! Modi, adipisci inventore. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Eaque molestiae,
+                doloribus aspernatur vitae placeat minus incidunt molestias
+                obcaecati commodi enim iure, magnam quis, velit tempore sequi
+                ipsa! Modi, adipisci inventore.
               </p>
-              <a href="#" class="btn btn-warning"> Learn More</a>
+              <a href="#" class="btn btn-primary"> Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Content section -->
+  <section id="content" class="content pb-5">
+    <div class="container">
+      <div class="row flex-row-reverse">
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="content-img">
+            <img src="Assets/images/About Us/Background.webp" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12 mt-md-5">
+          <div class="content-inner">
+            <div class="content-text">
+              <h2>Vision</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                molestiae, doloribus aspernatur vitae placeat minus incidunt
+                molestias obcaecati commodi enim iure, magnam quis, velit
+                tempore sequi ipsa! Modi, adipisci inventore. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Eaque molestiae,
+                doloribus aspernatur vitae placeat minus incidunt molestias
+                obcaecati commodi enim iure, magnam quis, velit tempore sequi
+                ipsa! Modi, adipisci inventore.
+              </p>
+              <a href="#" class="btn btn-primary"> Learn More</a>
             </div>
           </div>
         </div>
@@ -230,27 +322,30 @@
     </div>
   </section>
 
-  <!-- about section -->
-  <section id="about" class="about section-padding">
+  <!-- The North Face Athletes Section -->
+  <section class="pt-5 pb-5">
     <div class="container">
-      <div class="row flex-row-reverse">
-        <div class="col-lg-6 col-md-12 col-12">
-          <div class="about-img">
-            <img src="Assets/images/About Us/Background.webp" alt="" class="img-fluid">
-          </div>
+      <h2 class="row justify-content-center fw-bold">
+        The North Face Athletes
+      </h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 productbox p-0">
+          <a href="product.html">
+            <img src="Assets/images/Athletes/Jess Kimura.png" alt="" class="product-image" />
+          </a>
+          <h3 class="product-title">Jess Kimura</h3>
         </div>
-        <div class="col-lg-6 col-md-12 col-12 ps-lg-5 mt-md-5">
-          <div class="about-content">
-            <div class="about-text">
-              <h2>We Provide Best Quality <br> Services Ever</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae, doloribus aspernatur vitae
-                placeat minus incidunt molestias obcaecati commodi enim iure, magnam quis, velit tempore sequi ipsa!
-                Modi, adipisci inventore.
-              </p>
-              <a href="#" class="btn btn-warning"> Learn More</a>
-            </div>
-          </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 productbox p-0">
+          <img src="Assets/images/Athletes/Vasu Sojitra.png" alt="" class="product-image" />
+          <h3 class="product-title">Vasu Sojitra</h3>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 productbox p-0">
+          <img src="Assets/images/Athletes/Ingrid Backstrom.png" alt="" class="product-image" />
+          <h3 class="product-title">Ingrid Backstrom</h3>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 productbox p-0">
+          <img src="Assets/images/Athletes/Erik Leon.png" alt="" class="product-image" />
+          <h3 class="product-title">Erik Leon</h3>
         </div>
       </div>
     </div>
@@ -259,7 +354,7 @@
   <!-- Footer -->
   <footer class="text-center text-lg-start text-muted">
     <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <section class="d-flex justify-content-center p-4 border-bottom border-top">
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">
         <span>Get connected with us on social networks:</span>
@@ -268,7 +363,7 @@
 
       <!-- Right -->
       <div>
-        <a href="" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset" style="text-decoration: none">
           <i class="bi bi-facebook"></i>
         </a>
         <a href="" class="me-4 text-reset">
@@ -292,18 +387,17 @@
     <!-- Section: Social media -->
 
     <!-- Section: Links  -->
-    <section>
+    <section class="">
       <div class="container text-center text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-mountain me-3"></i>The North Face
-            </h6>
+            <h6 class="text-uppercase fw-bold mb-4">The North Face</h6>
             <p>
-              Discover the world with The North Face. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Discover the world with The North Face. Lorem ipsum dolor sit
+              amet, consectetur adipisicing elit.
             </p>
           </div>
           <!-- Grid column -->
@@ -313,16 +407,16 @@
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Products</h6>
             <p>
-              <a href="#!" class="text-reset">Jackets</a>
+              <a href="men.html" class="text-reset">Men</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Backpacks</a>
+              <a href="women.html" class="text-reset">Women</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Footwear</a>
+              <a href="kids.html" class="text-reset">Kids</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Accessories</a>
+              <a href="bags.html" class="text-reset">Bags</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -332,16 +426,16 @@
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Explore</h6>
             <p>
-              <a href="#!" class="text-reset">Blog</a>
+              <a href="aboutus.html#blog" class="text-reset">Blog</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Events</a>
+              <a href="aboutus.html#events" class="text-reset">Events</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Community</a>
+              <a href="aboutus.html#community" class="text-reset">Community</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Our Story</a>
+              <a href="aboutus.html#our-story" class="text-reset">Our Story</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -350,13 +444,16 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-map-marker-alt me-3"></i>123 Adventure Way, Mountain Town</p>
             <p>
-              <i class="fas fa-envelope me-3"></i>
+              <i class="bi bi-geo-alt-fill me-3"></i>123 Adventure Way,
+              Mountain Town
+            </p>
+            <p>
+              <i class="bi bi-envelope me-3"></i>
               info@thenorthface.com
             </p>
-            <p><i class="fas fa-phone me-3"></i> +1 800 123 4567</p>
-            <p><i class="fas fa-fax me-3"></i> +1 800 987 6543</p>
+            <p><i class="bi bi-phone me-3"></i> +1 800 123 4567</p>
+            <p><i class="bi bi-telephone me-3"></i> +1 800 987 6543</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -368,12 +465,10 @@
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
       © 2023 The North Face. All rights reserved.
-      <a class="text-reset fw-bold" href="#">Explore More on The North Face</a>
+      <a class="text-reset fw-bold" href="index.html">Explore More on The North Face</a>
     </div>
     <!-- Copyright -->
   </footer>
-
-  <!-- Footer -->
 
   <script src="Assets/bootstrap/js/popper.min.js"></script>
   <script src="Assets/bootstrap/js/jquery-3.7.1.min.js"></script>

@@ -11,6 +11,7 @@
   <link rel="icon" href="Assets/images/icon.jpg" class="icon" />
   <link rel="stylesheet" href="Assets/bootstrap/css/bootstrap.css" />
   <link rel="stylesheet" href="Assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -28,10 +29,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="men.html" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle active" href="men.html" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Men
             </a>
@@ -77,44 +78,41 @@
             <a class="nav-link" href="contactus.html">Contact Us</a>
           </li>
         </ul>
-        <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
         <li class="nav-item">
           <button class="btn btn-outline-primary m-2"><a class="nav-link" href="myaccount.html">My Account</a></button>
         </li>
-        <li class="shoppingicon nav-item"><i class="bx bx bx-shopping-bag " id="cart-bag"></i><span
-            id="total-items-display" class="cart-number">0</span></li>
+        <li class="shoppingicon nav-item">
+          <i class="bx bx bx-shopping-bag fs-3" id="cart-bag"></i>
+          <span id="total-items-display" class="cart-number fs-3">0</span>
+        </li>
         <div class="cart">
           <h2 class="cart-title">Your Cart</h2>
           <div class="cart-content">
-
           </div>
           <div class="total">
-            <div class="total-title">Total</div>
-            <div class="total-price">0$</div>
+              <div class="total-title">Total</div>
+              <div class="total-price">0$</div>
           </div>
-          <button type="button" class="but btn-buy btn-primary">Buy Now</button>
+          <button type="button" class="btn btn-buy btn-primary"><a href="checkout.html" class="btn">Buy
+                  Now</a></button>
           <i class="bx bx-x" id="close-cart"></i>
         </div>
-
       </div>
     </div>
   </nav>
 
 
   <!-- men main section -->
-  <section>
+  <!-- <section>
     <div class="container-fluid">
-      <div class="card main-photo w-40 d-block mx-auto">
+      <div class="card main-photo w-40 d-block mx-auto position-relative">
         <img style="height: 100vh;" class="card-img-top" src="Assets/images/About Us/Background.webp"
           alt="Men Background">
         <a href="#jackets" class="btn btn-primary btn-lg position-absolute top-50 start-50 translate-middle">Shop
           Men</a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Products -->
   <section class="menproducts">
@@ -124,38 +122,44 @@
       <section class="container p-0 ">
         <div class="row gap-5 justify-content-center">
           <div class="col-md-3 productbox p-0 ">
-            <a href="product.html"> <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image"> </a>
-            <h2 class="product-title"> 1996 RETRO NUPTSE JACKET </h2>
+            <a href="product.html"> <a href="product.html"> <img src="Assets/images/Men/Men Products/Jackets/1.jpg"
+                  alt="Jacket 1" class="product-image"></a>
+              <h2 class="product-title"> Jacket 1 </h2>
+              <span class="price">250$</span>
+              <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <div class="col-md-3 productbox p-0 ">
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/Jackets/2.jpg"
+                alt="Jacket 2" class="product-image"></a>
+            <h2 class="product-title">Jacket 2</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/2.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/Jackets/3.jpg" alt="Jacket 3"
+                class="product-image"></a>
+            <h2 class="product-title">Jacket 3</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/3.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/Jackets/4.jpg"
+                alt="Jacket 4" class="product-image"></a>
+            <h2 class="product-title">Jacket 4</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/4.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/Jackets/5.jpg"
+                alt="Jack" class="product-image"></a>
+            <h2 class="product-title">Jacket 5</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/5.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
-            <span class="price">250$</span>
-            <i class="bx bx-shopping-bag add-cart"></i>
-          </div>
-          <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/Jackets/6.png"
+                alt="Jacket 6" class="product-image"></a>
+            <h2 class="product-title">Jacket 6</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
@@ -169,38 +173,44 @@
       <section class="container p-0 ">
         <div class="row gap-5 justify-content-center">
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/T-Shirts/1.webp" alt=""
+                class="product-image"></a>
+            <h2 class="product-title">T-shirt 1</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/T-Shirts/2.webp" alt=""
+                class="product-image"></a>
+            <h2 class="product-title">T-shirt 2</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/T-Shirts/3.webp" alt=""
+                class="product-image"></a>
+            <h2 class="product-title">T-shirt 3</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/T-Shirts/4.webp" alt=""
+                class="product-image"></a>
+            <h2 class="product-title">T-shirt 4</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/T-Shirts/5.webp" alt=""
+                class="product-image"></a>
+            <h2 class="product-title">T-shirt 5</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/T-Shirts/1.webp" alt=""
+                class="product-image"></a>
+            <h2 class="product-title">T-shirt 6</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
@@ -214,38 +224,44 @@
       <section class="container p-0 ">
         <div class="row gap-5 justify-content-center">
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/Bottoms/1.webp" alt=""
+                class="product-image"></a>
+            <h2 class="product-title">Bottom 1</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/Bottoms/2.webp" alt=""
+                class="product-image"></a>
+            <h2 class="product-title">Bottom 2</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/Bottoms/3.webp" alt=""
+                class="product-image"></a>
+            <h2 class="product-title">Bottom 3</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/Bottoms/4.webp" alt=""
+                class="product-image"></a>
+            <h2 class="product-title">Bottom 4</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/Bottoms/5.webp" alt=""
+                class="product-image"></a>
+            <h2 class="product-title">Bottom 5</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
           <div class="col-md-3 productbox p-0 ">
-            <img src="Assets/images/Men/Men Products/1.jpg" alt="" class="product-image">
-            <h2 class="product-title">Copa pure turf boots</h2>
+            <a href="product.html"> <img src="Assets/images/Men/Men Products/Bottoms/6.webp" alt=""
+                class="product-image"></a>
+            <h2 class="product-title">Bottom 6</h2>
             <span class="price">250$</span>
             <i class="bx bx-shopping-bag add-cart"></i>
           </div>
@@ -255,9 +271,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <footer class="text-center text-lg-start text-muted">
       <!-- Section: Social media -->
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <section class="d-flex justify-content-center p-4 border-bottom border-top">
         <!-- Left -->
         <div class="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
@@ -266,23 +282,23 @@
 
         <!-- Right -->
         <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
+          <a href="" class="me-4 text-reset" style="text-decoration: none;">
+            <i class="bi bi-facebook"></i>
           </a>
           <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
+            <i class="bi bi-twitter"></i>
           </a>
           <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
+            <i class="bi bi-google"></i>
           </a>
           <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
+            <i class="bi bi-instagram"></i>
           </a>
           <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
+            <i class="bi bi-linkedin"></i>
           </a>
           <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
+            <i class="bi bi-github"></i>
           </a>
         </div>
         <!-- Right -->
@@ -298,11 +314,10 @@
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
               <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Company name
+                The North Face
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                Discover the world with The North Face. Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit.
               </p>
             </div>
@@ -313,16 +328,16 @@
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Products</h6>
               <p>
-                <a href="#!" class="text-reset">Angular</a>
+                <a href="men.html" class="text-reset">Men</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">React</a>
+                <a href="women.html" class="text-reset">Women</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Vue</a>
+                <a href="kids.html" class="text-reset">Kids</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Laravel</a>
+                <a href="bags.html" class="text-reset">Bags</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -330,18 +345,18 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <h6 class="text-uppercase fw-bold mb-4">Explore</h6>
               <p>
-                <a href="#!" class="text-reset">Pricing</a>
+                <a href="aboutus.html#blog" class="text-reset">Blog</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Settings</a>
+                <a href="aboutus.html#events" class="text-reset">Events</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Orders</a>
+                <a href="aboutus.html#community" class="text-reset">Community</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Help</a>
+                <a href="aboutus.html#our-story" class="text-reset">Our Story</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -350,13 +365,13 @@
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p><i class="bi bi-geo-alt-fill me-3"></i>123 Adventure Way, Mountain Town</p>
               <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@example.com
+                <i class="bi bi-envelope me-3"></i>
+                info@thenorthface.com
               </p>
-              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              <p><i class="bi bi-phone me-3"></i> +1 800 123 4567</p>
+              <p><i class="bi bi-telephone me-3"></i> +1 800 987 6543</p>
             </div>
             <!-- Grid column -->
           </div>
@@ -367,12 +382,11 @@
 
       <!-- Copyright -->
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        © 2023 The North Face. All rights reserved.
+        <a class="text-reset fw-bold" href="index.html">Explore More on The North Face</a>
       </div>
       <!-- Copyright -->
     </footer>
-    <!-- Footer -->
 
     <script src="Assets/bootstrap/js/popper.min.js"></script>
     <script src="Assets/bootstrap/js/jquery-3.7.1.min.js"></script>
